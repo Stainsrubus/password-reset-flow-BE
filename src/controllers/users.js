@@ -121,7 +121,7 @@ const forgetPassword =async(req,res)=>{
             from: 'clownmailer@gmail.com',
             to: email,
             subject: 'Reset Your password',
-            text: `http://localhost:5173/reset-password/${user._id}/${token}`
+            text: `https://jade-gelato-67086c.netlify.app/reset-password/${user._id}/${token}`
           };
           
           transporter.sendMail(mailOptions,function(error, info){
